@@ -1,0 +1,19 @@
+<mat-sidenav-container fxFill class="sidenav-container">
+  <mat-sidenav-content>
+    <div fxFill fxLayout="column">
+      <header>
+        <mat-toolbar color="primary" class="mat-elevation-z6">
+          <a class="wrapper" tabindex="-1" [ngStyle]="{'text-decoration': 'none','color': 'white'}"
+             href="" [routerLink]="['/']">
+            <img src="/assets/icons/teambuilder_logo.png" height="64px" alt="logo teambuilder">
+          </a>
+          <div fxFlex></div>
+        </mat-toolbar>
+      </header>
+      <div id="content_div" class="map-row" fxLayout="row" fxFlex="100">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
